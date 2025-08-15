@@ -1,0 +1,340 @@
+:root {
+    /* --bg: #000000; */
+    /* --text-color: #8B9EB4; */
+    /* --sphere-color: #0b638b; */
+
+    --bg: #dbe8ee;
+    --text-color: #071927;
+    --sphere-color: #1d7dd8;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('font/PlaypenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--bg);
+    font-family: 'MinhaFonte', sans-serif;
+    padding-bottom: 4vw;
+}
+
+#titulo {
+    position: absolute;
+    top: 2%;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 7vh;
+}
+
+.avatar img {
+    width: 80vw;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vw;
+}
+
+.social {
+    background-color: var(--bg);
+    width: 90vw;
+    display: flex;
+    text-align: left;
+    padding-bottom: 2vw;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2vw;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.nome {
+    display: flex;
+    margin-top: 3vw;
+    flex-direction: column;
+    text-align: center;
+    gap: 2vw;
+}
+
+hr {
+    border: 1px solid var(--text-color);
+    /* border: 3px solid red; */
+    width: 70vw;
+}
+
+
+.circulo {
+    position: fixed;
+    top: 110vw;
+    left: 0;
+    z-index: -100;
+    width: 90vw;
+    height: 90vw;
+    border-radius: 50%;
+    background-color: var(--sphere-color);
+    filter: blur(240px);
+}
+
+a {
+    font-weight: bold;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: start;
+    gap: 5vw;
+    padding: 3vw;
+    margin-top: 2vw;
+    margin-left: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.whats,
+.linkedin,
+.instagram,
+.email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 3vw;
+    width: 90%;
+
+    img{
+        display: block;
+    }
+}
+
+.whats img {
+    width: 10vw;
+}
+
+.linkedin img {
+    width: 10vw;
+}
+
+.instagram img {
+    width: 10vw;
+}
+
+.email img {
+    width: 10vw;
+}
+
+.website img {
+    width: 10vw;
+}
+
+
+#database {
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+    top: 40vw;
+    left: 10vw;
+    transform: rotate(-20deg);
+}
+
+#python {
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+    top: 75vw;
+    left: 5vw;
+    transform: rotate(-20deg);
+}
+
+#node {
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+    top: 20vw;
+    left: 27vw;
+    transform: rotate(-10deg);
+}
+
+#powerbi {
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+    top: 35vw;
+    right: 17vw;
+    transform: rotate(10deg);
+}
+
+#excel {
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+    top: 75vw;
+    right: 4vw;
+    transform: rotate(12deg);
+}
+
+#js {
+    display: none;
+}
+
+/* -------------------------------------------- */
+
+@media (min-width: 1024px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-bottom: 0;
+    }
+
+    #titulo {
+        position: relative;
+        top: 1%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 80vw;
+        max-width: 1200px;
+    }
+
+    .avatar {
+        text-align: center;
+    }
+
+    .avatar img {
+        width: 20vw;
+        border-radius: 40%;
+        z-index: 10;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .social {
+        width: 50vw;
+        max-width: 600px;
+        padding: 3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1vw;
+    }
+
+    .contacts {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        justify-content: space-between;
+        gap: 2vw;
+    }
+
+    .whats,
+    .linkedin,
+    .instagram,
+    .email,
+    .website {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        width: 100%;
+    }
+
+    .whats img,
+    .linkedin img,
+    .instagram img,
+    .email img,
+    .website img {
+        width: 3vw;
+        max-width: 4vw;
+    }
+
+    .circulo {
+        position: fixed;
+        top: 50%;
+        left: 60vw;
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+        background-color: var(--sphere-color);
+        filter: blur(240px);
+        transform: translate(-50%, -50%);
+        z-index: -100;
+    }
+
+    #database {
+        top: 7vw;
+        left: 5vw;
+        width: 8vw;
+    }
+
+    #python {
+        top: 40vw;
+        left: 2vw;
+        width: 8vw;
+    }
+
+    #node {
+        top: 10vw;
+        left: 40vw;
+        width: 7vw;
+    }
+
+    #powerbi {
+        top: 3vw;
+        right: 3vw;
+        width: 8vw;
+    }
+
+    #excel {
+        top: 35vw;
+        right: 5vw;
+        width: 8vw;
+    }
+
+    #js {
+        display: block;
+        position: absolute;
+        top: 30vw;
+        left: 40vw;
+        opacity: 0.3;
+        width: 6vw;
+        transform: rotate(7deg);
+    }
+}
