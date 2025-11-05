@@ -158,7 +158,7 @@ a {
 
 /* -------------------------------------------- */
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px), screen and (orientation: landscape) {
 
     body {
         display: flex;
