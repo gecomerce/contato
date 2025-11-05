@@ -45,7 +45,7 @@ body {
 }
 
 .avatar img {
-    width: 80vw;
+    width: 75%;
 }
 
 .container {
@@ -185,6 +185,7 @@ a {
     .avatar {
         text-align: center;
         margin-top: 0;
+        width: 50%;
     }
 
     .avatar img {
