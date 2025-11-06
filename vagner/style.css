@@ -4,10 +4,10 @@
 
 :root {
     
-    --bg: #ffffff;
-    --text-color: #b37199;
-    --text-contacts: #a71163;
-    --sphere-color: #d43296;
+    --bg: #000000;
+    --text-color: #e2e1e2;
+    --text-contacts: #ffffff;
+    --sphere-color: #12d0e9;
 }
 
 
@@ -42,6 +42,7 @@ body {
     flex-direction: column;
     justify-content: start;
     margin-top: 7vh;
+    margin-bottom: 7vw;
 }
 
 .avatar img {
@@ -86,7 +87,7 @@ body {
 
 hr {
     border: 1px solid var(--text-contacts);
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -121,6 +122,7 @@ a {
 
 .whats,
 .linkedin,
+.website,
 .instagram,
 .email{
     display: flex;
@@ -209,7 +211,7 @@ a {
     .social {
         width: 50vw;
         max-width: 600px;
-        padding: 3vw;
+        padding: 1vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -229,6 +231,7 @@ a {
 
     .whats,
     .linkedin,
+    .website,
     .instagram,
     .email{
         display: flex;
@@ -238,6 +241,7 @@ a {
     }
 
     .whats img,
+    .website img,
     .linkedin img,
     .instagram img,
     .email img {

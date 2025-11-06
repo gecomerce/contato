@@ -79,14 +79,13 @@ body {
     margin-top: 3vw;
     flex-direction: column;
     text-align: center;
-    align-items: center;
     gap: 2vw;
     color: var(--text-contacts);
 }
 
 hr {
     border: 1px solid var(--text-contacts);
-    width: 90%;
+    width: 70vw;
 }
 
 
