@@ -4,7 +4,7 @@
 
 :root {
     
-    --bg: #000000;
+    --bg: #020f31;
     --text-color: #e2e1e2;
     --text-contacts: #ffffff;
     --sphere-color: #12d0e9;
@@ -209,8 +209,7 @@ a {
 
 
     .social {
-        width: 50vw;
-        max-width: 600px;
+        max-width: 45%;
         padding: 1vw;
         display: flex;
         flex-direction: column;
