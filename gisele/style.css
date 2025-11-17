@@ -4,10 +4,9 @@
 
 :root {
     
-    --bg: #ffffff;
-    --text-color: #b37199;
-    --text-contacts: #a71163;
-    --sphere-color: #d43296;
+    --bg: #f1f1f1;
+    --text-contacts: #036e34;
+    --sphere-color: #10d65c;
 }
 
 
@@ -29,6 +28,7 @@ body {
     background-color: var(--bg);
     font-family: 'quicksand', sans-serif;
     padding-bottom: 4vw;
+    height: 100vh;
 }
 
 #titulo {
