@@ -2,12 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
-:root {
+/* :root {
     
     --bg: #ffffff;
     --text-color: #b37199;
     --text-contacts: #a71163;
     --sphere-color: #d43296;
+} */
+
+
+:root {
+    
+    --bg: #ffffff;
+    --text-contacts: #02455f;
+    --sphere-color: #02455f;
 }
 
 
