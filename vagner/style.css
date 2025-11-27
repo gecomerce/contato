@@ -4,10 +4,11 @@
 
 :root {
     
-    --bg: #020f31;
+    --bg: #000000;
     --text-color: #e2e1e2;
     --text-contacts: #ffffff;
-    --sphere-color: #12d0e9;
+    --sphere-color: #656669;
+    --container-color: rgb(22, 30, 36);
 }
 
 
@@ -42,7 +43,7 @@ body {
     flex-direction: column;
     justify-content: start;
     margin-top: 7vh;
-    margin-bottom: 7vw;
+    /* margin-bottom: 7vw; */
 }
 
 .avatar img {
@@ -58,7 +59,7 @@ body {
 }
 
 .social {
-    background-color: var(--bg);
+    background-color: var(--container-color);
     width: 90vw;
     display: flex;
     text-align: left;
@@ -193,7 +194,7 @@ a {
 
     .avatar img {
         width: 20vw;
-        border-radius: 35%;
+        border-radius: 40%;
         z-index: 10;
     }
 
